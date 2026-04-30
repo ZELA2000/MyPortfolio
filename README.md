@@ -539,9 +539,9 @@ Pick your method:
 - [GitLab Pages (CI/CD — recommended)](#gitlab-pages)
 - [Gitea / Forgejo / Codeberg (CI build — manual deploy)](#gitea--forgejo--codeberg)
 - [Self-hosted / VPS (Docker)](#self-hosted--vps)
-- [Cloudflare Pages (Zero-to-Hero)](#cloudflare-pages)
-- [Netlify (Zero-to-Hero)](#netlify)
-- [Vercel (Zero-to-Hero)](#vercel)
+- [Cloudflare Pages](#cloudflare-pages)
+- [Netlify](#netlify)
+- [Vercel](#vercel)
 
 ---
 
