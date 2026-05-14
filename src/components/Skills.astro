@@ -1,28 +1,27 @@
 ---
 import skillsData from '../data/skills.json';
 import { withBase } from '../lib/assetPath';
+
+const { section, categories } = skillsData;
 ---
 
 <section id="skills" class="py-24" style="scroll-margin-top: 80px;">
   <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+
     <div class="text-center mb-16 reveal">
-      <p class="text-sm font-semibold tracking-widest text-highlight uppercase mb-3">
-        What I work with
-      </p>
-      <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold section-title">Tools & Skills</h2>
+      <p class="text-sm font-semibold tracking-widest text-highlight uppercase mb-3">{section.eyebrow}</p>
+      <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold section-title">{section.heading}</h2>
     </div>
 
     <div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8">
-      {
-        skillsData.map((category, ci) => (
-          <div class="card reveal" style={`transition-delay: ${ci * 0.1}s;`}>
-            <h3 class="text-sm font-bold mb-6 text-accent uppercase tracking-widest">
-              {category.title}
-            </h3>
+      {categories.map((category, ci) => (
+        <div class="skills-card card reveal" style={`transition-delay: ${ci * 0.1}s;`}>
+          <h3 class="category-title">{category.title}</h3>
 
-            <div class="skill-grid">
-              {category.skills.map((skill) => (
-                <div class="skill-item">
+          <div class="skill-grid">
+            {category.skills.map((skill) => (
+              <div class="skill-item">
+                <div class="icon-tile">
                   <img
                     src={withBase(skill.logo)}
                     alt={skill.name}
@@ -30,27 +29,55 @@ import { withBase } from '../lib/assetPath';
                     loading="lazy"
                     width="36"
                     height="36"
+                    onerror="this.style.display='none';this.nextElementSibling?.classList.remove('skill-icon-hidden')"
                   />
-                  <span class="skill-name">{skill.name}</span>
+                  <iconify-icon
+                    icon={skill.iconify ?? 'mdi:star-four-points-circle-outline'}
+                    class="skill-icon skill-icon-hidden"
+                    width="32"
+                    height="32"
+                    aria-hidden="true"
+                  />
                 </div>
-              ))}
-            </div>
+                <span class="skill-name">{skill.name}</span>
+              </div>
+            ))}
           </div>
-        ))
-      }
+        </div>
+      ))}
     </div>
+
   </div>
 </section>
 
 <style>
+  /* ── Category cards ──────────────────────────────── */
+  .skills-card {
+    transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+  }
+  .skills-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 18px 42px rgba(2, 6, 23, 0.32);
+    border-color: color-mix(in srgb, var(--accent), transparent 50%);
+  }
+
+  .category-title {
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 1.25rem;
+  }
+
+  /* ── Skill grid ──────────────────────────────────── */
   .skill-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(72px, 1fr));
-    gap: 1.25rem 0.75rem;
+    grid-template-columns: repeat(auto-fill, minmax(68px, 1fr));
+    gap: 1rem 0.6rem;
   }
 
   .skill-item {
-    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -59,68 +86,60 @@ import { withBase } from '../lib/assetPath';
     transition: transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
   }
   .skill-item:hover {
-    transform: translateY(-3px) scale(1.08);
+    transform: translateY(-3px) scale(1.06);
   }
 
-  .skill-item::after {
-    content: '';
-    position: absolute;
-    top: 2px;
-    left: 50%;
-    width: 48px;
-    height: 48px;
-    border-radius: 50%;
-    transform: translateX(-50%);
-    background: conic-gradient(from 0deg, #e0e7ff, #f0f9ff, #fdf4ff, #e0e7ff);
-    filter: blur(10px);
-    opacity: 0;
-    z-index: 0;
-    animation: skill-glow-spin 4s linear infinite;
-    animation-play-state: paused;
-    transition: opacity 0.12s ease;
+  /* ── Icon tile — neutral bg so all icons are visible ─ */
+  .icon-tile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 52px;
+    height: 52px;
+    border-radius: 0.6rem;
+    background: rgba(248, 250, 252, 0.92);
+    transition: background 0.2s ease, box-shadow 0.2s ease;
   }
-  .skill-item:hover::after {
-    opacity: 0.12;
-    animation-play-state: running;
-    transition: opacity 0.75s ease;
-  }
-
-  @keyframes skill-glow-spin {
-    from {
-      transform: translateX(-50%) rotate(0deg);
-    }
-    to {
-      transform: translateX(-50%) rotate(360deg);
-    }
+  .skill-item:hover .icon-tile {
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.18);
   }
 
   .skill-icon {
-    position: relative;
-    z-index: 1;
-    width: 36px;
-    height: 36px;
+    width: 34px;
+    height: 34px;
     object-fit: contain;
-    filter: brightness(0.85) saturate(0.8);
-    transition: filter 0.2s ease;
   }
-  .skill-item:hover .skill-icon {
-    filter: brightness(1.1) saturate(1.2);
-  }
+  .skill-icon-hidden { display: none; }
 
   .skill-name {
-    position: relative;
-    z-index: 1;
     font-size: 0.65rem;
     font-weight: 500;
     color: #64748b;
     line-height: 1.2;
-    transition:
-      color 0.2s ease,
-      text-shadow 0.2s ease;
+    transition: color 0.2s ease;
   }
   .skill-item:hover .skill-name {
     color: #94a3b8;
-    text-shadow: 0px 1px 1px black;
+  }
+
+  /* ── Light theme ─────────────────────────────────── */
+  :global([data-theme='light']) .icon-tile {
+    background: rgba(226, 232, 240, 0.8);
+  }
+  :global([data-theme='light']) .skill-item:hover .icon-tile {
+    background: rgba(203, 213, 225, 0.95);
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+  }
+  :global([data-theme='light']) .skills-card:hover {
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.08);
+  }
+  :global([data-theme='light']) .skill-name { color: var(--text-muted); }
+  :global([data-theme='light']) .skill-item:hover .skill-name { color: var(--accent); }
+
+  /* ── Responsive ──────────────────────────────────── */
+  @media (max-width: 480px) {
+    .skill-grid { grid-template-columns: repeat(auto-fill, minmax(60px, 1fr)); }
   }
 </style>
 
@@ -128,10 +147,7 @@ import { withBase } from '../lib/assetPath';
   document.querySelectorAll('#skills .reveal').forEach((el) => {
     const io = new IntersectionObserver(
       ([entry]) => {
-        if (entry.isIntersecting) {
-          el.classList.add('visible');
-          io.disconnect();
-        }
+        if (entry.isIntersecting) { el.classList.add('visible'); io.disconnect(); }
       },
       { threshold: 0.1 }
     );
