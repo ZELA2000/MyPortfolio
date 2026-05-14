@@ -90,6 +90,13 @@ If your site looks broken with missing styles or images after deploying, the mos
 
 > **Tip:** If you only want one portfolio site and a clean URL, name the repo `your-username.github.io` from the start. You can always rename later, but you'll need to retrigger a deploy.
 
+##### Custom Domains
+
+If you want www.mywebsite.com - Register/Rent that domain, then add a `CNAME` record pointing `www` at `your-username.github.io`. For your top level domain (mywebsite.com), use an **ALIAS** or **A** record (`@`). 
+
+In your repo go to **Settings → Pages → Custom domain**, enter your domain, and save — GitHub will handle the rest.
+
+> **Note:** With a custom domain your site serves from `/`, so set `BASE_PATH` to `/` (or unset it) to avoid broken styles.
 
 * * *
 
