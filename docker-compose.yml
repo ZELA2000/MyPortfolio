@@ -26,6 +26,20 @@ services:
     secrets:
       - github_token_password
 
+  # ── One-shot tooling (profile: tools) ────────────────────────────────────────
+  # Used for migration and maintenance tasks that need pnpm/node but not the full build.
+  # Usage: docker compose --profile tools run --rm pnpm-tools sh -c "<cmd>"
+  pnpm-tools:
+    image: node:24-alpine
+    volumes:
+      - ./:/app:z
+    working_dir: /app
+    environment:
+      - HOST_UID=${UID:-1000}
+      - HOST_GID=${GID:-1000}
+    profiles:
+      - tools
+
   # ── Nginx server ─────────────────────────────────────────────────────────────
   # Optional: bakes dist/ into a lean nginx image and serves it.
   # Use this on your production machine instead of copying files manually.
