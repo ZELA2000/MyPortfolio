@@ -1,12 +1,5 @@
 import { defineConfig } from 'astro/config';
-import tailwindcss from '@tailwindcss/postcss';
-
-// base: './' is broken in Astro 6: prependForwardSlash() in vite-plugin-assets.ts
-// always prepends '/', turning './' into '/.' and making BASE_URL = '/.'.
-// Root-relative paths (/images/...) with build.format:'file' (flat dist/) work
-// from any server root without setting BASE_PATH.
-// Docs: https://docs.astro.build/en/reference/configuration-reference/#buildformat
-//       https://docs.astro.build/en/reference/configuration-reference/#trailingslash
+import tailwindcss from '@tailwindcss/vite';
 
 export default defineConfig({
   // SITE_URL and BASE_PATH are injected by Docker / CI; defaults keep local dev working without env vars.
@@ -15,11 +8,7 @@ export default defineConfig({
   trailingSlash: 'never',
   build: { format: 'file' },
   vite: {
-    css: {
-      postcss: {
-        plugins: [tailwindcss()],
-      },
-    },
+    plugins: [tailwindcss()],
   },
   output: 'static',
   compressHTML: true,
