@@ -5,6 +5,9 @@ node_modules/
 dist/
 output/
 
+# pnpm
+.pnpm-store
+
 # Astro cache — regenerated during build
 .astro/
 
