@@ -79,7 +79,7 @@ const { footerAttribution } = siteData;
           footerAttribution.builder && (
             <>
               {' '}
-              · Creato con{' '}
+              · <span data-lang="it">Creato con</span><span data-lang="en">Built with</span>{' '}
               <a href={footerAttribution.builderUrl} target="_blank">
                 {footerAttribution.builder}
               </a>
@@ -90,15 +90,15 @@ const { footerAttribution } = siteData;
           footerAttribution.host && (
             <>
               {' '}
-              / Hosting su{' '}
+              / <span data-lang="it">Hosting su</span><span data-lang="en">Hosted on</span>{' '}
               <a href={footerAttribution.hostUrl} target="_blank">
                 {footerAttribution.host}
               </a>
             </>
           )
         }
-        &nbsp;·&nbsp;<a href={`${base}privacy.html`} class="hover:text-accent transition-colors">Privacy</a 
-        >&nbsp;·&nbsp;<a href={`${base}terms.html`} class="hover:text-accent transition-colors">Termini</a> 
+        &nbsp;·&nbsp;<a href={`${base}privacy.html`} class="hover:text-accent transition-colors"><span data-lang="it">Privacy</span><span data-lang="en">Privacy</span></a 
+        >&nbsp;·&nbsp;<a href={`${base}terms.html`} class="hover:text-accent transition-colors"><span data-lang="it">Termini</span><span data-lang="en">Terms</span></a> 
       </p>
       <div class="flex items-center gap-5">
         {

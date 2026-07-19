@@ -7,9 +7,13 @@ import personalData from '../data/personal.json';
     <div class="max-w-4xl mx-auto">
       <div class="text-center mb-12 reveal">
         <p class="text-sm font-semibold tracking-widest text-highlight uppercase mb-3">
-          Conoscimi
+          <span data-lang="it">Conoscimi</span>
+          <span data-lang="en">Get to know me</span>
         </p>
-        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold mb-0 section-title">Chi sono</h2>
+        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold mb-0 section-title">
+          <span data-lang="it">Chi sono</span>
+          <span data-lang="en">About me</span>
+        </h2>
       </div>
 
       <div class="card reveal" style="transition-delay: 0.15s;">
@@ -40,7 +44,10 @@ import personalData from '../data/personal.json';
               </svg>
             </div>
             <div>
-              <h3 class="text-white font-semibold mb-1">Ruolo</h3>
+              <h3 class="text-white font-semibold mb-1">
+                <span data-lang="it">Ruolo</span>
+                <span data-lang="en">Role</span>
+              </h3>
               <p class="text-slate-400 text-sm">{personalData.title}</p>
             </div>
           </div>
@@ -70,7 +77,10 @@ import personalData from '../data/personal.json';
               </svg>
             </div>
             <div>
-              <h3 class="text-white font-semibold mb-1">Località</h3>
+              <h3 class="text-white font-semibold mb-1">
+                <span data-lang="it">Località</span>
+                <span data-lang="en">Location</span>
+              </h3>
               <p class="text-slate-400 text-sm">{personalData.location}</p>
             </div>
           </div>
@@ -94,9 +104,13 @@ import personalData from '../data/personal.json';
               </svg>
             </div>
             <div>
-              <h3 class="text-white font-semibold mb-1">Esperienza</h3>
+              <h3 class="text-white font-semibold mb-1">
+                <span data-lang="it">Esperienza</span>
+                <span data-lang="en">Experience</span>
+              </h3>
               <p class="text-slate-400 text-sm">
-                {personalData.yearsExperience} anni di esperienza
+                <span data-lang="it">{personalData.yearsExperience} anni di esperienza</span>
+                <span data-lang="en">{personalData.yearsExperience} years of experience</span>
               </p>
             </div>
           </div>
@@ -121,7 +135,10 @@ import personalData from '../data/personal.json';
               </svg>
             </div>
             <div>
-              <h3 class="text-white font-semibold mb-1">Formazione</h3>
+              <h3 class="text-white font-semibold mb-1">
+                <span data-lang="it">Formazione</span>
+                <span data-lang="en">Education</span>
+              </h3>
               <p class="text-slate-400 text-sm">{personalData.education}</p>
             </div>
           </div>
@@ -146,7 +163,10 @@ import personalData from '../data/personal.json';
                   </svg>
                 </div>
                 <div>
-                  <h3 class="text-white font-semibold mb-1">Volontariato</h3>
+                  <h3 class="text-white font-semibold mb-1">
+                    <span data-lang="it">Volontariato</span>
+                    <span data-lang="en">Volunteer</span>
+                  </h3>
                   <p class="text-slate-400 text-sm">{personalData.volunteer}</p>
                 </div>
               </div>

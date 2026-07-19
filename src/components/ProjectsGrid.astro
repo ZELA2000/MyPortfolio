@@ -38,8 +38,14 @@ const projectsJson = JSON.stringify(
 <section id="projects" class="py-24 bg-slate-900/30" style="scroll-margin-top: 80px;">
   <div class="container mx-auto px-4 sm:px-6 lg:px-8">
     <div class="text-center mb-10 reveal">
-      <p class="text-sm font-semibold tracking-widest text-highlight uppercase mb-3">I miei lavori</p>
-      <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold section-title">Progetti in evidenza</h2>
+      <p class="text-sm font-semibold tracking-widest text-highlight uppercase mb-3">
+        <span data-lang="it">I miei lavori</span>
+        <span data-lang="en">My work</span>
+      </p>
+      <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold section-title">
+        <span data-lang="it">Progetti in evidenza</span>
+        <span data-lang="en">Featured projects</span>
+      </h2>
     </div>
 
     <div class="flex flex-wrap justify-center gap-2 mb-10 reveal" style="transition-delay:0.1s;">
@@ -142,7 +148,10 @@ const projectsJson = JSON.stringify(
                   </div>
                 )}
                 <span class="view-hint">
-                  <span class="view-hint-text">Clicca per aprire il progetto</span>
+                  <span class="view-hint-text">
+                    <span data-lang="it">Clicca per aprire il progetto</span>
+                    <span data-lang="en">Click to open the project</span>
+                  </span>
                   <svg
                     class="view-hint-arrow"
                     fill="none"
@@ -165,7 +174,8 @@ const projectsJson = JSON.stringify(
     </div>
 
     <p id="projects-empty" class="hidden text-center text-slate-600 text-sm mt-12">
-      Nessun progetto in questa categoria.
+      <span data-lang="it">Nessun progetto in questa categoria.</span>
+      <span data-lang="en">No projects in this category yet.</span>
     </p>
   </div>
 </section>
@@ -211,7 +221,7 @@ const projectsJson = JSON.stringify(
             height={18}
             class="modal-link-icon"
           />
-          <span id="modal-link-text">Apri progetto</span>
+          <span id="modal-link-text"><span data-lang="it">Apri progetto</span><span data-lang="en">View project</span></span>
           <svg class="modal-cta-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path
               stroke-linecap="round"
@@ -221,7 +231,10 @@ const projectsJson = JSON.stringify(
             ></path>
           </svg>
         </a>
-        <p id="modal-no-link" class="modal-no-link hidden">Privato / nessun link pubblico disponibile.</p>
+        <p id="modal-no-link" class="modal-no-link hidden">
+          <span data-lang="it">Privato / nessun link pubblico disponibile.</span>
+          <span data-lang="en">Private / no public link available.</span>
+        </p>
       </div>
     </div>
   </div>
