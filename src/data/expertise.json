@@ -3,26 +3,26 @@
     {
       "key": "sysadmin",
       "icon": "server-stack",
-      "title": "Design & Art Direction",
-      "description": "Visual identity, layout, typography, and the aesthetic decisions that make people stop and look twice. Whether print or screen, the goal is the same — work that holds up."
+      "title": "Infrastruttura e hosting",
+      "description": "Server, domini, deploy e manutenzione: setup puliti che stanno in piedi e non richiedono rincorse continue."
     },
     {
       "key": "webdev",
       "icon": "code-bracket-square",
-      "title": "Web Design & Development",
-      "description": "From wireframe to deployment — building sites and apps that look considered, perform well, and give visitors exactly what they came for."
+      "title": "Automazione e deploy",
+      "description": "Script, pipeline e procedure ripetibili per far arrivare i servizi online in modo stabile e senza sorprese."
     },
     {
       "key": "freelance",
       "icon": "user-circle",
-      "title": "Creative Freelance",
-      "description": "Independent project work in photography, video, 3D, illustration, or wherever the brief leads. Direct to work with, flexible, and invested in the outcome."
+      "title": "Supporto operativo",
+      "description": "Interventi mirati, troubleshooting e manutenzione pratica per tenere i sistemi affidabili e facili da gestire."
     },
     {
       "key": "leadership",
       "icon": "users",
-      "title": "Collaboration & Direction",
-      "description": "Working alongside teams, clients, and stakeholders to take a project from idea to shipped — clear communication, honest timelines, and work that actually gets done."
+      "title": "Collaborazione e continuità",
+      "description": "Lavoro con team e clienti per portare un ambiente da idea a servizio stabile, con comunicazione chiara e tempi realistici."
     }
   ]
 }

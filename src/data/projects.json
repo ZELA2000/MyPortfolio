@@ -2,12 +2,12 @@
   "layout": "grid",
   "items": [
     {
-      "title": "Open Source Portfolio Template",
+      "title": "Template portfolio open source",
       "featured": true,
       "resume": true,
       "company": "Community",
       "category": "webdev",
-      "description": "The template you're looking at right now. Built with Astro, fully data-driven, and designed to be claimed by anyone. Fork it, fill it, ship it. All placeholder content is waiting for yours.",
+      "description": "Il template che stai guardando ora. Costruito con Astro, guidato dai dati e pensato per essere preso e adattato da chiunque. Fork, personalizza e pubblica.",
       "tags": ["Astro", "TypeScript", "Tailwind CSS", "Open Source", "Template"],
       "icon": "command-line",
       "sliderImage": "/images/projects/use-astro2.jpg",
@@ -23,12 +23,12 @@
       "githubRepo": "portfolio-template"
     },
     {
-      "title": "3D Environment Study",
+      "title": "Studio ambiente e rendering",
       "featured": true,
       "resume": true,
-      "company": "Personal Work",
+      "company": "Lavoro personale",
       "category": "blender",
-      "description": "A series of Blender scenes exploring lighting, texture, and atmosphere — no narrative, just craft. Rendered in Cycles, post-processed in Photoshop, shared as a study in patience and iteration.",
+      "description": "Una serie di scene di Blender dedicate a luci, materiali e atmosfera. Niente storia, solo pratica e attenzione ai dettagli.",
       "tags": ["Blender", "3D Modeling", "Lighting", "Cycles Render", "Photoshop"],
       "icon": "cpu-chip",
       "sliderImage": "/images/projects/blender-mockup2.jpg",
@@ -44,11 +44,11 @@
       "githubRepo": ""
     },
     {
-      "title": "Personal Design System",
+      "title": "Sistema di design personale",
       "featured": true,
-      "company": "Side Project",
+      "company": "Progetto personale",
       "category": "design",
-      "description": "A living component library built for personal and freelance use. Design tokens, reusable components, and documentation that travel from project to project — no starting from scratch every time.",
+      "description": "Una libreria di componenti e regole che porto da un progetto all'altro: niente ripartenze da zero, meno caos e più coerenza.",
       "tags": ["Figma", "CSS", "TypeScript", "Design Systems", "Component Library"],
       "icon": "document-text",
       "sliderImage": "/images/projects/design-library3.jpg",
@@ -64,11 +64,11 @@
       "githubRepo": "design-system"
     },
     {
-      "title": "Photography Workflow App",
+      "title": "App flusso di lavoro fotografico",
       "resume": true,
-      "company": "Side Project",
+      "company": "Progetto personale",
       "category": "appdev",
-      "description": "A lightweight local web app for managing shoot intake, selects, and client delivery — replacing a patchwork of folders, spreadsheets, and emails with a single tool built for the way I work.",
+      "description": "Una piccola web app locale per gestire intake, selezione e consegna: meno cartelle sparse, più ordine nel lavoro quotidiano.",
       "tags": ["React", "SQLite", "Photography", "Workflow", "Node.js"],
       "icon": "eye",
       "sliderImage": "/images/projects/web-app2.jpg",

@@ -5,7 +5,7 @@
     "date": "May 2026",
     "status": "Earned",
     "type": "certification",
-    "description": "Seven-course program covering UX research, wireframing, prototyping, and usability testing. Emphasis on human-centered design principles and building accessible, inclusive user experiences.",
+    "description": "Percorso in sette moduli su ricerca UX, wireframe, prototipazione e test di usabilità. Focus su esperienze accessibili e orientate alle persone.",
     "credentialUrl": ""
   },
   {
@@ -14,34 +14,34 @@
     "date": "December 2025",
     "status": "Earned",
     "type": "certification",
-    "description": "Business-side program covering client acquisition, proposal writing, contracts, pricing strategy, and scope management. A practical toolkit for running an independent creative practice.",
+    "description": "Percorso su acquisizione clienti, preventivi, contratti, pricing e gestione del perimetro. Strumenti pratici per lavorare in autonomia.",
     "credentialUrl": ""
   },
   {
-    "name": "Motion Design with After Effects",
+    "name": "Motion Design con After Effects",
     "issuer": "School of Motion",
     "date": "August 2024",
     "status": "Completed",
     "type": "professional-development",
-    "description": "Motion principles, keyframe animation, easing curves, and compositing applied to title sequences, UI animations, and explainer video production.",
+    "description": "Principi di animazione, keyframe, curve di easing e compositing applicati a sequenze e micro-animazioni UI.",
     "credentialUrl": ""
   },
   {
-    "name": "3D Art for Real-Time Engines",
+    "name": "3D per motori real-time",
     "issuer": "Unity Learn / Epic Games",
     "date": "Target: Q3 2027",
     "status": "In Progress",
     "type": "in-progress",
-    "description": "Bridging offline rendering knowledge with real-time constraints — optimizing assets, baking maps, and building environments in Unreal Engine for interactive and immersive projects.",
+    "description": "Conoscenze di rendering e ottimizzazione applicate a contesti real-time, con attenzione a performance e workflow.",
     "credentialUrl": ""
   },
   {
-    "name": "Creative Coding & Generative AI",
+    "name": "Creative Coding e AI generativa",
     "issuer": "Domestika / Runway",
     "date": "Target: 2028",
     "status": "In Progress",
     "type": "in-progress",
-    "description": "Exploring the intersection of code, generative models, and visual art — building interactive installations, AI-assisted design tools, and procedural media for web and physical spaces.",
+    "description": "Esplorazione tra codice, modelli generativi e media interattivi per strumenti, installazioni e contenuti procedurali.",
     "credentialUrl": ""
   }
 ]

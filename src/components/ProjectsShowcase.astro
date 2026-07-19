@@ -8,17 +8,17 @@ const projectsData = projectsFile.items;
 <section id="projects" class="projects-section">
   <div class="container mx-auto px-4 sm:px-6 lg:px-8">
     <div class="text-center mb-12 reveal visible">
-      <p class="text-sm font-semibold tracking-widest text-highlight uppercase mb-3">My work</p>
-      <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold section-title">Projects</h2>
+      <p class="text-sm font-semibold tracking-widest text-highlight uppercase mb-3">I miei lavori</p>
+      <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold section-title">Progetti</h2>
     </div>
 
     <div class="projects-list">
       {
         projectsData.map((project, index) => {
           const hasImages = Boolean(project.backgroundImage && (project as any).images?.length);
-          const ctaLabel = project.link.includes('github.com') ? 'View on GitHub'
-            : project.link.includes('gitlab') ? 'View on GitLab'
-            : project.link ? 'View Project'
+          const ctaLabel = project.link.includes('github.com') ? 'Vedi su GitHub'
+            : project.link.includes('gitlab') ? 'Vedi su GitLab'
+            : project.link ? 'Apri progetto'
             : null;
 
           return (
@@ -42,7 +42,7 @@ const projectsData = projectsFile.items;
                           class={`project-shot-button ${image === project.backgroundImage ? 'active' : ''}`}
                           data-gallery={String(index)}
                           data-image={withBase(image)}
-                          aria-label={`Show ${project.title} screenshot ${i + 1}`}
+                          aria-label={`Mostra schermata ${i + 1} di ${project.title}`}
                         >
                           <img src={withBase(image)} alt="" loading="lazy" width="160" height="90" />
                         </button>

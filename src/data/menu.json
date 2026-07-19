@@ -1,52 +1,52 @@
 {
   "sections": [
     {
-      "label": "About",
-      "shortLabel": "About",
+      "label": "Chi sono",
+      "shortLabel": "Chi sono",
       "href": "#about",
-      "desc": "Background, experience, and approach"
+      "desc": "Esperienza e approccio"
     },
     {
-      "label": "Expertise",
-      "shortLabel": "Expertise",
+      "label": "Competenze",
+      "shortLabel": "Competenze",
       "href": "#expertise",
-      "desc": "What I focus on and how I work"
+      "desc": "Dove metto le mani"
     },
     {
       "label": "Skills",
       "shortLabel": "Skills",
       "href": "#skills",
-      "desc": "Tools and technologies I use"
+      "desc": "Strumenti e tecnologie che uso"
     },
     {
       "label": "Portfolio",
       "shortLabel": "Portfolio",
       "href": "#portfolio",
-      "desc": "Client and commercial work"
+      "desc": "Lavori selezionati"
     },
     {
-      "label": "Projects",
-      "shortLabel": "Projects",
+      "label": "Progetti",
+      "shortLabel": "Progetti",
       "href": "#projects",
-      "desc": "Personal projects and experiments"
+      "desc": "Esperimenti e setup personali"
     },
     {
-      "label": "Certifications",
+      "label": "Certificazioni",
       "shortLabel": "Certs",
       "href": "#certifications",
-      "desc": "Training, courses, and credentials"
+      "desc": "Formazione e credenziali"
     },
     {
-      "label": "Services",
-      "shortLabel": "Services",
+      "label": "Servizi",
+      "shortLabel": "Servizi",
       "href": "#services",
-      "desc": "Sites and projects I run"
+      "desc": "Cosa seguo e gestisco"
     },
     {
-      "label": "Contact",
-      "shortLabel": "Contact",
+      "label": "Contatti",
+      "shortLabel": "Contatti",
       "href": "#contact",
-      "desc": "Start a project or just say hello"
+      "desc": "Scrivimi pure"
     }
   ]
 }

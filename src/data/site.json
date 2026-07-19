@@ -1,9 +1,9 @@
 {
-  "title": "Gabriele Bovina | Portfolio",
-  "description": "Portfolio personale di Gabriele Bovina. Design, sviluppo front-end, progetti e sperimentazioni in italiano e inglese.",
+  "title": "Gabriele Bovina | Sistemista",
+  "description": "Portfolio personale di Gabriele Bovina. Sistemista, infrastruttura, hosting e manutenzione di ambienti web in italiano, con possibilità di passare all'inglese.",
   "ogSiteName": "Gabriele Bovina",
   "shortName": "GB",
-  "tagline": "Designing products · Building interfaces · Raccontando idee",
+  "tagline": "Infrastruttura solida · Ambienti ordinati · Idee che restano online",
   "themeStorageKey": "portfolio-theme",
   "web3formsKey": "YOUR_WEB3FORMS_KEY_HERE",
   "footerAttribution": {
@@ -14,101 +14,97 @@
   },
   "retroTvCount": 21,
   "seoKeywords": [
-    "Creative Portfolio",
-    "Web Designer",
-    "Visual Artist",
-    "UI/UX Design",
-    "Front-End Developer",
-    "3D Artist",
-    "Motion Graphics",
-    "Brand Identity",
-    "Freelance Designer",
-    "Video Editor",
-    "Photography",
-    "Illustration",
-    "Digital Art",
-    "Graphic Design",
-    "Interactive Design",
-    "Product Design",
-    "Creative Direction",
-    "Art Direction",
-    "Full-Stack Developer",
-    "Animator",
-    "Typographer",
-    "Storyteller",
+    "Portfolio personale",
+    "Sistemista",
+    "Infrastruttura",
+    "Hosting",
+    "Server Linux",
+    "Docker",
+    "Nginx",
+    "Monitoraggio",
+    "Automazione",
+    "Backup",
+    "Sicurezza",
+    "Networking",
+    "Manutenzione",
+    "Troubleshooting",
+    "DevOps",
+    "Site Reliability",
+    "Amministrazione sistemi",
+    "Supporto tecnico",
     "Open to Work",
-    "Available for Projects",
-    "Design Systems",
-    "Visual Storytelling"
+    "Disponibile per progetti",
+    "Operazioni web",
+    "Affidabilità operativa"
   ],
   "navExternal": [
     {
       "label": "Blog",
-      "desc": "Writing on design, process, and what I'm learning",
+      "desc": "Note su sistemi, processi e quello che sto imparando",
       "personalKey": "blog",
       "urlTemplate": "{value}"
     },
     {
       "label": "GitHub",
-      "desc": "Open-source work and side experiments",
+      "desc": "Lavori open source ed esperimenti laterali",
       "personalKey": "github",
       "urlTemplate": "https://github.com/{value}"
     },
     {
       "label": "LinkedIn",
-      "desc": "Professional profile and recommendations",
+      "desc": "Profilo professionale e contatti",
       "personalKey": "linkedin",
       "urlTemplate": "https://linkedin.com/in/{value}"
     },
     {
       "label": "Email",
-      "desc": "Best way to reach me for project inquiries",
+      "desc": "Il modo migliore per contattarmi per richieste e progetti",
       "personalKey": "email",
       "urlTemplate": "mailto:{value}"
     },
     {
       "label": "Phone",
-      "desc": "Available for calls by appointment",
+      "desc": "Disponibile per chiamate su appuntamento",
       "personalKey": "phone",
       "urlTemplate": "tel:{value}"
     }
   ],
   "serviceSites": [
     {
-      "badge": "Selected Work",
+      "badge": "Lavori selezionati",
       "badgeColor": "#6366f1",
       "cardAccent": "#6366f1",
       "glowColor": "rgba(99, 102, 241, 0.12)",
       "iconBg": "rgba(99, 102, 241, 0.1)",
       "iconBorder": "rgba(99, 102, 241, 0.18)",
       "iconType": "web",
-      "name": "Case Studies",
+      "name": "Infrastruttura e Hosting",
       "url": "https://zela2000.org/#portfolio",
-      "description": "Una panoramica selezionata dei lavori più rappresentativi: siti, identità visive e progetti pensati per raccontare bene il risultato e il processo.",
+      "description": "Un riepilogo dei lavori e delle configurazioni che mi piace curare: ambienti puliti, hosting ordinato e setup che restano facili da mantenere.",
       "features": [
-        "Brand identity and visual systems",
-        "Web design & front-end development",
-        "Process, context, and delivery"
+        "Server e servizi ben organizzati",
+        "Deploy puliti e ripetibili",
+        "Manutenzione e continuità operativa"
       ],
-      "ctaText": "View Portfolio"
+      "ctaText": "Vedi i progetti"
     },
     {
-      "badge": "Labs",
+      "badge": "Laboratorio",
       "badgeColor": "#10b981",
       "cardAccent": "#10b981",
       "glowColor": "rgba(16, 185, 129, 0.15)",
       "iconBg": "rgba(16, 185, 129, 0.1)",
       "iconBorder": "rgba(16, 185, 129, 0.2)",
       "iconType": "server",
-      "name": "Projects & Experiments",
+      "name": "Automazione e Monitoraggio",
       "url": "https://zela2000.org/#projects",
-      "description": "Progetti personali, prototipi e piccoli esperimenti che tengono il portfolio vivo: idee da testare, rifinire e trasformare in qualcosa di utile.",
+      "description": "Script, controlli e piccoli esperimenti che migliorano la gestione quotidiana: meno attrito, più affidabilità.",
       "features": [
-        "Personal builds and prototypes",
-        "Iterating in public",
-        "Practical, shippable experiments"
+        "Automazioni utili",
+        "Monitoraggio e alert",
+        "Backup, logging e verifica"
       ],
-      "ctaText": "Open Projects"
+      "ctaText": "Apri i progetti"
     }
   ]
 }

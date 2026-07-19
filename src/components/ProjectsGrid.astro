@@ -21,8 +21,8 @@ const categoryFilters = [...new Set(allProjectsData.map((p) => p.category))].map
 }));
 
 const filters = [
-  { label: 'Featured', value: 'featured' },
-  { label: 'All', value: 'all' },
+  { label: 'In evidenza', value: 'featured' },
+  { label: 'Tutti', value: 'all' },
   ...categoryFilters,
 ];
 
@@ -38,8 +38,8 @@ const projectsJson = JSON.stringify(
 <section id="projects" class="py-24 bg-slate-900/30" style="scroll-margin-top: 80px;">
   <div class="container mx-auto px-4 sm:px-6 lg:px-8">
     <div class="text-center mb-10 reveal">
-      <p class="text-sm font-semibold tracking-widest text-highlight uppercase mb-3">My work</p>
-      <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold section-title">Featured Projects</h2>
+      <p class="text-sm font-semibold tracking-widest text-highlight uppercase mb-3">I miei lavori</p>
+      <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold section-title">Progetti in evidenza</h2>
     </div>
 
     <div class="flex flex-wrap justify-center gap-2 mb-10 reveal" style="transition-delay:0.1s;">
@@ -142,7 +142,7 @@ const projectsJson = JSON.stringify(
                   </div>
                 )}
                 <span class="view-hint">
-                  <span class="view-hint-text">Click for link to project</span>
+                  <span class="view-hint-text">Clicca per aprire il progetto</span>
                   <svg
                     class="view-hint-arrow"
                     fill="none"
@@ -165,7 +165,7 @@ const projectsJson = JSON.stringify(
     </div>
 
     <p id="projects-empty" class="hidden text-center text-slate-600 text-sm mt-12">
-      No projects in this category yet.
+      Nessun progetto in questa categoria.
     </p>
   </div>
 </section>
@@ -179,7 +179,7 @@ const projectsJson = JSON.stringify(
   hidden
 >
   <div class="modal-container" id="modal-container">
-    <button class="modal-close" id="modal-close" aria-label="Close">
+    <button class="modal-close" id="modal-close" aria-label="Chiudi">
       <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" class="w-5 h-5">
         <path
           stroke-linecap="round"
@@ -211,7 +211,7 @@ const projectsJson = JSON.stringify(
             height={18}
             class="modal-link-icon"
           />
-          <span id="modal-link-text">View Project</span>
+          <span id="modal-link-text">Apri progetto</span>
           <svg class="modal-cta-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path
               stroke-linecap="round"
@@ -221,7 +221,7 @@ const projectsJson = JSON.stringify(
             ></path>
           </svg>
         </a>
-        <p id="modal-no-link" class="modal-no-link hidden">Private / No public link available.</p>
+        <p id="modal-no-link" class="modal-no-link hidden">Privato / nessun link pubblico disponibile.</p>
       </div>
     </div>
   </div>

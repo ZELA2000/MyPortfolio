@@ -25,11 +25,11 @@ const portfolioDataForClient = portfolioData.map((p) => ({
   <div class="container mx-auto px-4 sm:px-6 lg:px-8">
     <div class="text-center mb-14 reveal">
       <p class="text-sm font-semibold tracking-widest text-highlight uppercase mb-3">
-        My portfolio
+        Il mio portfolio
       </p>
       <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold section-title">Portfolio</h2>
       <p class="mt-4 text-base max-w-xl mx-auto" style="color: var(--text-muted);">
-        Projects across different fields and clients.
+        Lavori selezionati tra infrastruttura, siti web e progetti personali.
       </p>
     </div>
 
@@ -99,10 +99,10 @@ const portfolioDataForClient = portfolioData.map((p) => ({
                         />
                         <circle cx="12" cy="12" r="3" fill="none" />
                       </svg>
-                      View Screens
+                      Vedi schermate
                     </button>
                     {project.images.length > 1 && (
-                      <span class="portfolio-screen-pill">{project.images.length} screens</span>
+                      <span class="portfolio-screen-pill">{project.images.length} schermate</span>
                     )}
                   </div>
                 </div>
@@ -112,7 +112,7 @@ const portfolioDataForClient = portfolioData.map((p) => ({
             <div class="portfolio-footer">
               <span class="portfolio-title">{project.title}</span>
               <span class="portfolio-img-count">
-                {project.images.length > 1 ? `${project.images.length} screens` : '1 screen'}
+                {project.images.length > 1 ? `${project.images.length} schermate` : '1 schermata'}
               </span>
             </div>
           </div>

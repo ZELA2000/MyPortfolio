@@ -69,7 +69,7 @@ function safeJsonLd(obj: object): string {
 ---
 
 <!doctype html>
-<html lang="en" style="color-scheme: dark; background: #020617;" data-theme-key={siteData.themeStorageKey}>
+<html lang="it" style="color-scheme: dark; background: #020617;" data-theme-key={siteData.themeStorageKey}>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -94,7 +94,7 @@ function safeJsonLd(obj: object): string {
     <meta property="og:image:height" content="460" />
     <meta property="og:image:alt"    content={ogImageAlt} />
     <meta property="og:site_name"    content={siteData.ogSiteName} />
-    <meta property="og:locale"       content="en_US" />
+    <meta property="og:locale"       content="it_IT" />
 
     <!-- Twitter / X Card -->
     <meta name="twitter:card"        content="summary_large_image" />
@@ -147,6 +147,32 @@ function safeJsonLd(obj: object): string {
           } else {
             document.documentElement.style.background = '#020617';
           }
+        } catch {}
+      })();
+    </script>
+    <script is:inline>
+      (function () {
+        try {
+          var key = 'portfolio-language';
+          var saved = localStorage.getItem(key);
+          var lang = saved === 'en' ? 'en' : 'it';
+          document.documentElement.lang = lang;
+          document.documentElement.dataset.language = lang;
+
+          document.addEventListener('click', function (event) {
+            var target = event.target;
+            var button = target && target.closest ? target.closest('[data-lang-toggle]') : null;
+            if (!button) return;
+
+            lang = document.documentElement.dataset.language === 'en' ? 'it' : 'en';
+            document.documentElement.lang = lang;
+            document.documentElement.dataset.language = lang;
+            localStorage.setItem(key, lang);
+
+            document.querySelectorAll('[data-lang-toggle]').forEach(function (el) {
+              el.setAttribute('aria-pressed', lang === 'en' ? 'true' : 'false');
+            });
+          });
         } catch {}
       })();
     </script>
