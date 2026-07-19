@@ -2,10 +2,10 @@
   "title": "Gabriele Bovina | Sistemista",
   "description": "Portfolio personale di Gabriele Bovina. Sistemista, infrastruttura, hosting e manutenzione di ambienti web in italiano, con possibilità di passare all'inglese.",
   "ogSiteName": "Gabriele Bovina",
-  "shortName": "GB",
+  "shortName": "ZELA2000",
   "tagline": "Infrastruttura solida · Ambienti ordinati · Idee che restano online",
   "themeStorageKey": "portfolio-theme",
-  "web3formsKey": "YOUR_WEB3FORMS_KEY_HERE",
+  "web3formsKey": "7d60069e-5666-4a6f-8974-cd035c88ede3",
   "footerAttribution": {
       "builder": "Astro",
       "builderUrl": "https://astro.build",
