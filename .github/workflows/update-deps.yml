@@ -42,13 +42,7 @@ jobs:
       - uses: pnpm/action-setup@v4
 
       - name: Update pinned packages to latest
-        run: |
-          pnpm update \
-            astro tailwindcss @tailwindcss/vite @astrojs/check \
-            typescript eslint @typescript-eslint/parser eslint-plugin-astro \
-            @types/node rss-parser prettier prettier-plugin-astro \
-            prettier-plugin-tailwindcss \
-            --latest
+        run: pnpm update --latest
 
       - name: Pin packageManager field to resolved pnpm version
         run: |

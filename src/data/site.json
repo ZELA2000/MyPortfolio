@@ -1,16 +1,16 @@
 {
-  "title": "Your Name Here | Creative Portfolio",
-  "description": "Portfolio of a designer, developer, and creator. Browse work spanning web, visual design, 3D, video, and more — then reach out.",
-  "ogSiteName": "Portfolio",
-  "shortName": "FOLIO",
-  "tagline": "Designing experiences · Building products · Telling stories",
+  "title": "Gabriele Bovina | Portfolio",
+  "description": "Portfolio personale di Gabriele Bovina. Design, sviluppo front-end, progetti e sperimentazioni in italiano e inglese.",
+  "ogSiteName": "Gabriele Bovina",
+  "shortName": "GB",
+  "tagline": "Designing products · Building interfaces · Raccontando idee",
   "themeStorageKey": "portfolio-theme",
   "web3formsKey": "YOUR_WEB3FORMS_KEY_HERE",
   "footerAttribution": {
-    "builder": "Built with this open-source template",
-    "builderUrl": "https://github.com/your-github-handle",
-    "host": "Hosted on your platform of choice",
-    "hostUrl": "https://yourdomain.com"
+      "builder": "Astro",
+      "builderUrl": "https://astro.build",
+      "host": "zela2000.org",
+      "hostUrl": "https://zela2000.org"
   },
   "retroTvCount": 21,
   "seoKeywords": [
@@ -75,40 +75,40 @@
   ],
   "serviceSites": [
     {
-      "badge": "Client Work",
+      "badge": "Selected Work",
       "badgeColor": "#6366f1",
       "cardAccent": "#6366f1",
       "glowColor": "rgba(99, 102, 241, 0.12)",
       "iconBg": "rgba(99, 102, 241, 0.1)",
       "iconBorder": "rgba(99, 102, 241, 0.18)",
       "iconType": "web",
-      "name": "YourStudio.co",
-      "url": "https://yourstudio.co",
-      "description": "A dedicated space for client work — branding, web builds, campaigns, and everything in between. Full-service creative from concept through delivery, built on clear communication and no surprises.",
+      "name": "Case Studies",
+      "url": "https://zela2000.org/#portfolio",
+      "description": "Una panoramica selezionata dei lavori più rappresentativi: siti, identità visive e progetti pensati per raccontare bene il risultato e il processo.",
       "features": [
-        "Brand Identity & Visual Systems",
-        "Web Design & Development",
-        "Campaign Creative & Direction"
+        "Brand identity and visual systems",
+        "Web design & front-end development",
+        "Process, context, and delivery"
       ],
-      "ctaText": "View Studio Work"
+      "ctaText": "View Portfolio"
     },
     {
-      "badge": "Side Project",
+      "badge": "Labs",
       "badgeColor": "#10b981",
       "cardAccent": "#10b981",
       "glowColor": "rgba(16, 185, 129, 0.15)",
       "iconBg": "rgba(16, 185, 129, 0.1)",
       "iconBorder": "rgba(16, 185, 129, 0.2)",
       "iconType": "server",
-      "name": "YourProject.io",
-      "url": "https://yourproject.io",
-      "description": "A personal project built to scratch an itch — self-hosted, self-managed, and entirely my own problem to maintain. Independent, opinionated, and shipped without a committee.",
+      "name": "Projects & Experiments",
+      "url": "https://zela2000.org/#projects",
+      "description": "Progetti personali, prototipi e piccoli esperimenti che tengono il portfolio vivo: idee da testare, rifinire e trasformare in qualcosa di utile.",
       "features": [
-        "Self-Hosted & Fully Independent",
-        "Iterating in Public",
-        "Built for One Person: Me"
+        "Personal builds and prototypes",
+        "Iterating in public",
+        "Practical, shippable experiments"
       ],
-      "ctaText": "Check It Out"
+      "ctaText": "Open Projects"
     }
   ]
 }
