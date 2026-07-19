@@ -9,14 +9,23 @@ const { section, categories } = skillsData;
   <div class="container mx-auto px-4 sm:px-6 lg:px-8">
 
     <div class="text-center mb-16 reveal">
-      <p class="text-sm font-semibold tracking-widest text-highlight uppercase mb-3">{section.eyebrow}</p>
-      <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold section-title">{section.heading}</h2>
+      <p class="text-sm font-semibold tracking-widest text-highlight uppercase mb-3">
+        <span data-lang="it">{section.eyebrow}</span>
+        <span data-lang="en">What I work with</span>
+      </p>
+      <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold section-title">
+        <span data-lang="it">{section.heading}</span>
+        <span data-lang="en">Technical arsenal</span>
+      </h2>
     </div>
 
     <div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8">
       {categories.map((category, ci) => (
         <div class="skills-card card reveal" style={`transition-delay: ${ci * 0.1}s;`}>
-          <h3 class="category-title">{category.title}</h3>
+          <h3 class="category-title">
+            <span data-lang="it">{category.title}</span>
+            <span data-lang="en">{category.title}</span>
+          </h3>
 
           <div class="skill-grid">
             {category.skills.map((skill) => (

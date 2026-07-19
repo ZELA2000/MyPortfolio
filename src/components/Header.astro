@@ -5,6 +5,57 @@ import siteData from '../data/site.json';
 
 const { sections } = menu;
 
+const sectionLabels: Record<string, { it: string; en: string; itDesc: string; enDesc: string }> = {
+  '#about': {
+    it: 'Chi sono',
+    en: 'About',
+    itDesc: 'Esperienza e approccio',
+    enDesc: 'Background and approach',
+  },
+  '#expertise': {
+    it: 'Competenze',
+    en: 'Expertise',
+    itDesc: 'Dove metto le mani',
+    enDesc: 'What I focus on and how I work',
+  },
+  '#skills': {
+    it: 'Skills',
+    en: 'Skills',
+    itDesc: 'Strumenti e tecnologie che uso',
+    enDesc: 'Tools and technologies I use',
+  },
+  '#portfolio': {
+    it: 'Portfolio',
+    en: 'Portfolio',
+    itDesc: 'Lavori selezionati',
+    enDesc: 'Selected work',
+  },
+  '#projects': {
+    it: 'Progetti',
+    en: 'Projects',
+    itDesc: 'Esperimenti e setup personali',
+    enDesc: 'Personal projects and experiments',
+  },
+  '#certifications': {
+    it: 'Certificazioni',
+    en: 'Certs',
+    itDesc: 'Formazione e credenziali',
+    enDesc: 'Training and credentials',
+  },
+  '#services': {
+    it: 'Servizi',
+    en: 'Services',
+    itDesc: 'Cosa seguo e gestisco',
+    enDesc: 'Sites and projects I run',
+  },
+  '#contact': {
+    it: 'Contatti',
+    en: 'Contact',
+    itDesc: 'Scrivimi pure',
+    enDesc: 'Start a project or just say hello',
+  },
+};
+
 // Build external nav links from site.json definitions, skipping any whose personal.json key is empty.
 // This lets site authors add potential platforms to navExternal without requiring all fields be filled.
 const external = siteData.navExternal
@@ -31,7 +82,8 @@ const external = siteData.navExternal
         {
           sections.map((item) => (
             <a href={item.href} class="nav-link nav-link-sm">
-              {item.shortLabel}
+              <span data-lang="it">{sectionLabels[item.href]?.it ?? item.shortLabel}</span>
+              <span data-lang="en">{sectionLabels[item.href]?.en ?? item.shortLabel}</span>
             </a>
           ))
         }
@@ -139,8 +191,14 @@ const external = siteData.navExternal
           <a href={item.href} class="overlay-link" style={`--i: ${i};`}>
             <span class="overlay-num">0{i + 1}</span>
             <span class="overlay-link-body">
-              <span class="overlay-link-label">{item.label}</span>
-              <span class="overlay-link-desc">{item.desc}</span>
+              <span class="overlay-link-label">
+                <span data-lang="it">{sectionLabels[item.href]?.it ?? item.label}</span>
+                <span data-lang="en">{sectionLabels[item.href]?.en ?? item.label}</span>
+              </span>
+              <span class="overlay-link-desc">
+                <span data-lang="it">{sectionLabels[item.href]?.itDesc ?? item.desc}</span>
+                <span data-lang="en">{sectionLabels[item.href]?.enDesc ?? item.desc}</span>
+              </span>
             </span>
             <svg
               class="overlay-arrow"

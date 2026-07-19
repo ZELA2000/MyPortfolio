@@ -3,80 +3,170 @@ import Layout from '../layouts/Layout.astro';
 import personalData from '../data/personal.json';
 
 const currentYear = new Date().getFullYear();
-const title = `Privacy Policy | ${personalData.name}`;
+const title = `Privacy | ${personalData.name}`;
 
 const base = import.meta.env.BASE_URL;
 ---
 
-<Layout title={title} description={`Privacy policy for ${personalData.name}'s portfolio website.`}>
+<Layout title={title} description={`Informativa privacy del portfolio di ${personalData.name}.`}>
   <main id="main-content" class="policy-page">
     <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-3xl py-24">
-      <a href={`${base}`}  class="back-link">← Back to portfolio</a>
+      <a href={`${base}`} class="back-link">
+        <span data-lang="it">← Torna al portfolio</span>
+        <span data-lang="en">← Back to portfolio</span>
+      </a>
 
-      <h1 class="text-3xl sm:text-4xl font-bold mt-8 mb-2 gradient-text">Privacy Policy</h1>
-      <p class="text-slate-500 text-sm mb-12">Last updated: January {currentYear}</p>
+      <h1 class="text-3xl sm:text-4xl font-bold mt-8 mb-2 gradient-text">
+        <span data-lang="it">Informativa privacy</span>
+        <span data-lang="en">Privacy policy</span>
+      </h1>
+      <p class="text-slate-500 text-sm mb-12">
+        <span data-lang="it">Ultimo aggiornamento: gennaio {currentYear}</span>
+        <span data-lang="en">Last updated: January {currentYear}</span>
+      </p>
 
       <div class="prose-section">
-        <h2>1. Information We Collect</h2>
+        <h2>
+          <span data-lang="it">1. Informazioni raccolte</span>
+          <span data-lang="en">1. Information We Collect</span>
+        </h2>
         <p>
-          This is a static portfolio website. We collect only information you voluntarily provide
-          through the contact form: your name, email address, and message content.
+          <span data-lang="it">
+            Questo è un sito portfolio statico. Raccogliamo solo le informazioni che invii
+            volontariamente tramite il modulo di contatto: nome, email e messaggio.
+          </span>
+          <span data-lang="en">
+            This is a static portfolio website. We collect only information you voluntarily provide
+            through the contact form: your name, email address, and message content.
+          </span>
         </p>
         <p>
-          We do not use cookies, tracking pixels, or analytics scripts. We do not collect IP
-          addresses or browsing behaviour.
+          <span data-lang="it">
+            Non usiamo cookie, pixel di tracciamento o script di analytics. Non raccogliamo indirizzi
+            IP né dati di navigazione.
+          </span>
+          <span data-lang="en">
+            We do not use cookies, tracking pixels, or analytics scripts. We do not collect IP
+            addresses or browsing behaviour.
+          </span>
         </p>
 
-        <h2>2. How We Use Your Information</h2>
+        <h2>
+          <span data-lang="it">2. Come usiamo le informazioni</span>
+          <span data-lang="en">2. How We Use Your Information</span>
+        </h2>
         <p>
-          Information submitted via the contact form is used solely to respond to your inquiry.
-          Contact form submissions are processed by
-          <a href="https://web3forms.com" target="_blank" rel="noopener">Web3Forms</a> — their
-          <a href="https://web3forms.com/privacy" target="_blank" rel="noopener">privacy policy</a>
-          governs that data.
+          <span data-lang="it">
+            Le informazioni inviate tramite il modulo di contatto servono solo a rispondere alla tua
+            richiesta. Le submission sono processate da
+            <a href="https://web3forms.com" target="_blank" rel="noopener">Web3Forms</a> e si
+            applica la loro
+            <a href="https://web3forms.com/privacy" target="_blank" rel="noopener">informativa privacy</a>.
+          </span>
+          <span data-lang="en">
+            Information submitted via the contact form is used solely to respond to your inquiry.
+            Contact form submissions are processed by
+            <a href="https://web3forms.com" target="_blank" rel="noopener">Web3Forms</a> — their
+            <a href="https://web3forms.com/privacy" target="_blank" rel="noopener">privacy policy</a>
+            governs that data.
+          </span>
         </p>
 
-        <h2>3. Third-Party Services</h2>
-        <p>This site loads resources from the following third-party services:</p>
+        <h2>
+          <span data-lang="it">3. Servizi di terze parti</span>
+          <span data-lang="en">3. Third-Party Services</span>
+        </h2>
+        <p>
+          <span data-lang="it">Il sito carica risorse dai seguenti servizi di terze parti:</span>
+          <span data-lang="en">This site loads resources from the following third-party services:</span>
+        </p>
         <ul>
           <li>
-            <strong>Google Fonts</strong> — typography (Inter). Font files are cached locally at build
-            time and served from this domain. Requests reach <code>fonts.googleapis.com</code> only if
-            the local cache could not be built (e.g. no network access during the build).
+            <span data-lang="it">
+              <strong>Google Fonts</strong> — tipografia (Inter). I font vengono cacheati localmente in fase di build e serviti da questo dominio. Le richieste raggiungono <code>fonts.googleapis.com</code> solo se la cache locale non può essere costruita.
+            </span>
+            <span data-lang="en">
+              <strong>Google Fonts</strong> — typography (Inter). Font files are cached locally at build
+              time and served from this domain. Requests reach <code>fonts.googleapis.com</code> only if
+              the local cache could not be built (e.g. no network access during the build).
+            </span>
           </li>
           <li>
-            <strong>Iconify</strong> — social icons loaded on demand from <code
-              >api.iconify.design</code
-            >.
+            <span data-lang="it">
+              <strong>Iconify</strong> — icone social caricate su richiesta da <code>api.iconify.design</code>.
+            </span>
+            <span data-lang="en">
+              <strong>Iconify</strong> — social icons loaded on demand from <code>api.iconify.design</code>.
+            </span>
           </li>
-          <li><strong>Web3Forms</strong> — contact form submission endpoint.</li>
+          <li>
+            <span data-lang="it"><strong>Web3Forms</strong> — endpoint per il modulo di contatto.</span>
+            <span data-lang="en"><strong>Web3Forms</strong> — contact form submission endpoint.</span>
+          </li>
         </ul>
         <p>
-          Each of these services may log your IP address as part of normal server operation. Please
-          review their respective privacy policies for details.
+          <span data-lang="it">
+            Ognuno di questi servizi può registrare il tuo indirizzo IP come parte del normale
+            funzionamento. Consulta le rispettive privacy policy per i dettagli.
+          </span>
+          <span data-lang="en">
+            Each of these services may log your IP address as part of normal server operation. Please
+            review their respective privacy policies for details.
+          </span>
         </p>
 
-        <h2>4. Data Retention</h2>
+        <h2>
+          <span data-lang="it">4. Conservazione dei dati</span>
+          <span data-lang="en">4. Data Retention</span>
+        </h2>
         <p>
-          We do not store any personal data on our own servers. Contact form data is retained by
-          Web3Forms per their policy.
+          <span data-lang="it">
+            Non conserviamo dati personali sui nostri server. I dati del modulo di contatto sono
+            conservati da Web3Forms secondo la loro policy.
+          </span>
+          <span data-lang="en">
+            We do not store any personal data on our own servers. Contact form data is retained by
+            Web3Forms per their policy.
+          </span>
         </p>
 
-        <h2>5. Your Rights</h2>
+        <h2>
+          <span data-lang="it">5. I tuoi diritti</span>
+          <span data-lang="en">5. Your Rights</span>
+        </h2>
         <p>
-          You may request deletion of any contact form submission by emailing
-          <a href={`mailto:${personalData.email}`}>{personalData.email}</a>.
+          <span data-lang="it">
+            Puoi richiedere la cancellazione di qualsiasi invio del modulo contattando
+            <a href={`mailto:${personalData.email}`}>{personalData.email}</a>.
+          </span>
+          <span data-lang="en">
+            You may request deletion of any contact form submission by emailing
+            <a href={`mailto:${personalData.email}`}>{personalData.email}</a>.
+          </span>
         </p>
 
-        <h2>6. Changes to This Policy</h2>
+        <h2>
+          <span data-lang="it">6. Modifiche a questa informativa</span>
+          <span data-lang="en">6. Changes to This Policy</span>
+        </h2>
         <p>
-          This policy may be updated periodically. The date at the top of this page reflects the
-          most recent revision.
+          <span data-lang="it">
+            Questa informativa può essere aggiornata periodicamente. La data in alto riflette la
+            revisione più recente.
+          </span>
+          <span data-lang="en">
+            This policy may be updated periodically. The date at the top of this page reflects the
+            most recent revision.
+          </span>
         </p>
 
-        <h2>7. Contact</h2>
+        <h2>
+          <span data-lang="it">7. Contatti</span>
+          <span data-lang="en">7. Contact</span>
+        </h2>
         <p>
-          Privacy questions? Reach out at
+          <span data-lang="it">Domande sulla privacy? Scrivi a </span>
+          <span data-lang="en">Privacy questions? Reach out at </span>
           <a href={`mailto:${personalData.email}`}>{personalData.email}</a>.
         </p>
       </div>

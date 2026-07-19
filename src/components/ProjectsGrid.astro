@@ -324,6 +324,12 @@ const projectsJson = JSON.stringify(
   const modalLinkTx = document.getElementById('modal-link-text');
   const modalNoLink = document.getElementById('modal-no-link');
 
+  function setLocalizedText(node, itText, enText) {
+    if (!node) return;
+    const lang = document.documentElement.dataset.language === 'en' ? 'en' : 'it';
+    node.textContent = lang === 'en' ? enText : itText;
+  }
+
   function openModal(idx) {
     const p = projects[idx];
     if (!p) return;
@@ -352,10 +358,10 @@ const projectsJson = JSON.stringify(
 
     if (p.link) {
       modalLink.href = p.link;
-      if (p.link.includes('github.com')) modalLinkTx.textContent = 'View on GitHub';
-      else if (p.link.includes('gitlab')) modalLinkTx.textContent = 'View on GitLab';
-      else if (p.link.includes('blog')) modalLinkTx.textContent = 'Read the Post';
-      else modalLinkTx.textContent = 'View Project';
+      if (p.link.includes('github.com')) setLocalizedText(modalLinkTx, 'Vedi su GitHub', 'View on GitHub');
+      else if (p.link.includes('gitlab')) setLocalizedText(modalLinkTx, 'Vedi su GitLab', 'View on GitLab');
+      else if (p.link.includes('blog')) setLocalizedText(modalLinkTx, 'Leggi il post', 'Read the post');
+      else setLocalizedText(modalLinkTx, 'Apri progetto', 'View project');
       modalLink.classList.remove('hidden');
       modalNoLink.classList.add('hidden');
     } else {

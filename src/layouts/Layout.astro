@@ -159,6 +159,10 @@ function safeJsonLd(obj: object): string {
           document.documentElement.lang = lang;
           document.documentElement.dataset.language = lang;
 
+          document.querySelectorAll('[data-lang-toggle]').forEach(function (el) {
+            el.setAttribute('aria-pressed', lang === 'en' ? 'true' : 'false');
+          });
+
           document.addEventListener('click', function (event) {
             var target = event.target;
             var button = target && target.closest ? target.closest('[data-lang-toggle]') : null;

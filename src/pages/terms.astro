@@ -3,72 +3,151 @@ import Layout from '../layouts/Layout.astro';
 import personalData from '../data/personal.json';
 
 const currentYear = new Date().getFullYear();
-const title = `Terms of Service | ${personalData.name}`;
+const title = `Termini | ${personalData.name}`;
 
 const base = import.meta.env.BASE_URL;
 ---
 
 <Layout
   title={title}
-  description={`Terms of service for ${personalData.name}'s portfolio website.`}
+  description={`Termini di servizio del portfolio di ${personalData.name}.`}
 >
   <main id="main-content" class="policy-page">
     <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-3xl py-24">
-      <a href={`${base}`}  class="back-link">← Back to portfolio</a>
+      <a href={`${base}`} class="back-link">
+        <span data-lang="it">← Torna al portfolio</span>
+        <span data-lang="en">← Back to portfolio</span>
+      </a>
 
-      <h1 class="text-3xl sm:text-4xl font-bold mt-8 mb-2 gradient-text">Terms of Service</h1>
-      <p class="text-slate-500 text-sm mb-12">Last updated: January {currentYear}</p>
+      <h1 class="text-3xl sm:text-4xl font-bold mt-8 mb-2 gradient-text">
+        <span data-lang="it">Termini di servizio</span>
+        <span data-lang="en">Terms of service</span>
+      </h1>
+      <p class="text-slate-500 text-sm mb-12">
+        <span data-lang="it">Ultimo aggiornamento: gennaio {currentYear}</span>
+        <span data-lang="en">Last updated: January {currentYear}</span>
+      </p>
 
       <div class="prose-section">
-        <h2>1. Acceptance of Terms</h2>
+        <h2>
+          <span data-lang="it">1. Accettazione dei termini</span>
+          <span data-lang="en">1. Acceptance of Terms</span>
+        </h2>
         <p>
-          By accessing and using this website, you accept and agree to be bound by these Terms of
-          Service. If you do not agree to these terms, please do not use this website.
+          <span data-lang="it">
+            Accedendo e usando questo sito accetti e ti impegni a rispettare questi termini di
+            servizio. Se non sei d'accordo, non usare il sito.
+          </span>
+          <span data-lang="en">
+            By accessing and using this website, you accept and agree to be bound by these Terms of
+            Service. If you do not agree to these terms, please do not use this website.
+          </span>
         </p>
 
-        <h2>2. Use of Website</h2>
+        <h2>
+          <span data-lang="it">2. Uso del sito</span>
+          <span data-lang="en">2. Use of Website</span>
+        </h2>
         <p>
-          This website is a personal portfolio. You may view and share content for informational and
-          non-commercial purposes. You may not reproduce, redistribute, or commercially exploit any
-          content without prior written permission.
+          <span data-lang="it">
+            Questo sito è un portfolio personale. Puoi consultare e condividere i contenuti per scopi
+            informativi e non commerciali. Non puoi riprodurre, ridistribuire o sfruttare
+            commercialmente alcun contenuto senza autorizzazione scritta.
+          </span>
+          <span data-lang="en">
+            This website is a personal portfolio. You may view and share content for informational and
+            non-commercial purposes. You may not reproduce, redistribute, or commercially exploit any
+            content without prior written permission.
+          </span>
         </p>
 
-        <h2>3. Intellectual Property</h2>
+        <h2>
+          <span data-lang="it">3. Proprietà intellettuale</span>
+          <span data-lang="en">3. Intellectual Property</span>
+        </h2>
         <p>
-          All content on this website — including text, code samples, images, and design — is the
-          property of {personalData.name} unless otherwise noted. Open-source projects linked from this
-          site are governed by their respective licenses.
+          <span data-lang="it">
+            Tutti i contenuti del sito, inclusi testi, esempi di codice, immagini e design, sono di
+            proprietà di {personalData.name} salvo diversa indicazione. I progetti open source linkati
+            sono regolati dalle rispettive licenze.
+          </span>
+          <span data-lang="en">
+            All content on this website — including text, code samples, images, and design — is the
+            property of {personalData.name} unless otherwise noted. Open-source projects linked from this
+            site are governed by their respective licenses.
+          </span>
         </p>
 
-        <h2>4. Contact Form</h2>
+        <h2>
+          <span data-lang="it">4. Modulo di contatto</span>
+          <span data-lang="en">4. Contact Form</span>
+        </h2>
         <p>
-          Submissions via the contact form are used solely to respond to your inquiry. By submitting
-          the form you agree to be contacted at the email address you provide.
+          <span data-lang="it">
+            Gli invii tramite il modulo di contatto servono solo per rispondere alla tua richiesta.
+            Inviando il modulo accetti di essere contattato all'indirizzo email fornito.
+          </span>
+          <span data-lang="en">
+            Submissions via the contact form are used solely to respond to your inquiry. By submitting
+            the form you agree to be contacted at the email address you provide.
+          </span>
         </p>
 
-        <h2>5. External Links</h2>
+        <h2>
+          <span data-lang="it">5. Link esterni</span>
+          <span data-lang="en">5. External Links</span>
+        </h2>
         <p>
-          This site may contain links to external websites. These links are provided for convenience
-          only. We have no control over and accept no responsibility for the content of external
-          sites.
+          <span data-lang="it">
+            Il sito può contenere collegamenti a siti esterni. Questi link sono forniti solo per
+            comodità. Non abbiamo controllo né responsabilità sui contenuti dei siti esterni.
+          </span>
+          <span data-lang="en">
+            This site may contain links to external websites. These links are provided for convenience
+            only. We have no control over and accept no responsibility for the content of external
+            sites.
+          </span>
         </p>
 
-        <h2>6. Limitation of Liability</h2>
+        <h2>
+          <span data-lang="it">6. Limitazione di responsabilità</span>
+          <span data-lang="en">6. Limitation of Liability</span>
+        </h2>
         <p>
-          This website is provided "as is" without any representations or warranties. We shall not
-          be liable for any loss or damage arising from use of or reliance on information on this
-          site.
+          <span data-lang="it">
+            Il sito è fornito "così com'è" senza garanzie o dichiarazioni particolari. Non siamo
+            responsabili per eventuali perdite o danni derivanti dall'uso o dall'affidamento sulle
+            informazioni presenti qui.
+          </span>
+          <span data-lang="en">
+            This website is provided "as is" without any representations or warranties. We shall not
+            be liable for any loss or damage arising from use of or reliance on information on this
+            site.
+          </span>
         </p>
 
-        <h2>7. Changes</h2>
+        <h2>
+          <span data-lang="it">7. Modifiche</span>
+          <span data-lang="en">7. Changes</span>
+        </h2>
         <p>
-          These terms may be updated at any time. Continued use of the website constitutes
-          acceptance of any revised terms.
+          <span data-lang="it">
+            Questi termini possono essere aggiornati in qualsiasi momento. L'uso continuato del sito
+            implica l'accettazione dei termini aggiornati.
+          </span>
+          <span data-lang="en">
+            These terms may be updated at any time. Continued use of the website constitutes
+            acceptance of any revised terms.
+          </span>
         </p>
 
-        <h2>8. Contact</h2>
+        <h2>
+          <span data-lang="it">8. Contatti</span>
+          <span data-lang="en">8. Contact</span>
+        </h2>
         <p>
-          Questions about these terms? Reach out at
+          <span data-lang="it">Domande su questi termini? Scrivi a </span>
+          <span data-lang="en">Questions about these terms? Reach out at </span>
           <a href={`mailto:${personalData.email}`}>{personalData.email}</a>.
         </p>
       </div>
