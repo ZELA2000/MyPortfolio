@@ -82,21 +82,15 @@ jobs:
         run: pnpm install --no-frozen-lockfile
       - name: Resolve base path
         run: |
-          OWNER="${GITHUB_REPOSITORY_OWNER}"
-          REPO="${GITHUB_REPOSITORY#*/}"
           if [ -n "${{ vars.BASE_PATH }}" ]; then
             echo "BASE_PATH=${{ vars.BASE_PATH }}" >> $GITHUB_ENV
-          elif [ "${REPO,,}" = "${OWNER,,}.github.io" ]; then
-            echo "BASE_PATH=/" >> $GITHUB_ENV
           else
-            echo "BASE_PATH=/${REPO}/" >> $GITHUB_ENV
+            echo "BASE_PATH=/" >> $GITHUB_ENV
           fi
           if [ -n "${{ vars.SITE_URL }}" ]; then
             echo "SITE_URL=${{ vars.SITE_URL }}" >> $GITHUB_ENV
-          elif [ "${REPO,,}" = "${OWNER,,}.github.io" ]; then
-            echo "SITE_URL=https://${OWNER}.github.io" >> $GITHUB_ENV
           else
-            echo "SITE_URL=https://${OWNER}.github.io/${REPO}" >> $GITHUB_ENV
+            echo "SITE_URL=https://zela2000.org" >> $GITHUB_ENV
           fi
       - name: Build
         run: pnpm run build
