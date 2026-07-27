@@ -1,47 +1,11 @@
 [
   {
-    "name": "Google UX Design Certificate",
-    "issuer": "Google / Coursera",
-    "date": "May 2026",
+    "name": "SEC0 -  TryHackMe",
+    "issuer": "TryHackMe",
+    "date": "Jul 2026",
     "status": "Earned",
     "type": "certification",
-    "description": "Percorso in sette moduli su ricerca UX, wireframe, prototipazione e test di usabilità. Focus su esperienze accessibili e orientate alle persone.",
-    "credentialUrl": ""
-  },
-  {
-    "name": "Freelance Business Foundations",
-    "issuer": "CreativeLive",
-    "date": "December 2025",
-    "status": "Earned",
-    "type": "certification",
-    "description": "Percorso su acquisizione clienti, preventivi, contratti, pricing e gestione del perimetro. Strumenti pratici per lavorare in autonomia.",
-    "credentialUrl": ""
-  },
-  {
-    "name": "Motion Design con After Effects",
-    "issuer": "School of Motion",
-    "date": "August 2024",
-    "status": "Completed",
-    "type": "professional-development",
-    "description": "Principi di animazione, keyframe, curve di easing e compositing applicati a sequenze e micro-animazioni UI.",
-    "credentialUrl": ""
-  },
-  {
-    "name": "3D per motori real-time",
-    "issuer": "Unity Learn / Epic Games",
-    "date": "Target: Q3 2027",
-    "status": "In Progress",
-    "type": "in-progress",
-    "description": "Conoscenze di rendering e ottimizzazione applicate a contesti real-time, con attenzione a performance e workflow.",
-    "credentialUrl": ""
-  },
-  {
-    "name": "Creative Coding e AI generativa",
-    "issuer": "Domestika / Runway",
-    "date": "Target: 2028",
-    "status": "In Progress",
-    "type": "in-progress",
-    "description": "Esplorazione tra codice, modelli generativi e media interattivi per strumenti, installazioni e contenuti procedurali.",
-    "credentialUrl": ""
+    "description": "This certification demonstrates proficiency in cybersecurity fundamentals, including network security, threat analysis, and ethical hacking techniques. It validates the ability to identify vulnerabilities and implement security measures to protect digital assets.",
+    "credentialUrl": "https://assets.tryhackme.com/certification-certificate/6a58e365b449a338f248b11c.pdf"
   }
 ]
