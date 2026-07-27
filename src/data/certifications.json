@@ -1,5 +1,14 @@
 [
   {
+    "name": "SEC1 -  TryHackMe",
+    "issuer": "TryHackMe",
+    "date": "Jul 2026",
+    "status": "In Progress",
+    "type": "certification",
+    "description": "This certification demonstrates advanced knowledge in cybersecurity, including penetration testing, incident response, and secure coding practices. It validates the ability to assess and mitigate security risks in complex systems.",
+    "credentialUrl": ""
+  },
+  {
     "name": "SEC0 -  TryHackMe",
     "issuer": "TryHackMe",
     "date": "Jul 2026",
@@ -7,5 +16,41 @@
     "type": "certification",
     "description": "This certification demonstrates proficiency in cybersecurity fundamentals, including network security, threat analysis, and ethical hacking techniques. It validates the ability to identify vulnerabilities and implement security measures to protect digital assets.",
     "credentialUrl": "https://assets.tryhackme.com/certification-certificate/6a58e365b449a338f248b11c.pdf"
+  },
+  {
+    "name": "English B1 - Cambridge Assessment English",
+    "issuer": "Cambridge Assessment English",
+    "date": "May 2024",
+    "status": "Earned",
+    "type": "certification",
+    "description": "This certification demonstrates proficiency in English language skills at the B1 level, including reading, writing, listening, and speaking abilities. It validates the ability to communicate effectively in various real-life situations.",
+    "credentialUrl": "https://media.licdn.com/dms/image/v2/D4E2DAQFzzQhw4SP6bw/profile-treasury-image-shrink_800_800/profile-treasury-image-shrink_800_800/0/1719921430583?e=1785794400&v=beta&t=e1IIFNbTtFVr4ZzfPhLAed8PMcMneRZWAsYCAMwFsnQ"
+  },
+  {
+    "name": "GAMER BADGE - LV8",
+    "issuer": "LV8",
+    "date": "Jul 2023",
+    "status": "Earned",
+    "type": "badge",
+    "description": "This badge represents the completion of the Gamer level in the LV8 platform, showcasing advanced skills and knowledge in various areas. It validates the ability to navigate and utilize the platform effectively.",
+    "credentialUrl": "https://badges.parchment.eu/public/assertions/PSc-eiT_Qime9_w-obI34g?utm_source=url_copy&identity__email=gabriele.bov06%40gmail.com"
+  },
+  {
+    "name": "PLAYER BADGE - LV8",
+    "issuer": "LV8",
+    "date": "Jul 2023",
+    "status": "Earned",
+    "type": "badge",
+    "description": "This badge represents the completion of the Player level in the LV8 platform, showcasing intermediate skills and knowledge in various areas. It validates the ability to navigate and utilize the platform effectively.",
+    "credentialUrl": "https://badges.parchment.eu/public/assertions/eblBADyDTCuVCPg4bFIQxw?utm_source=url_copy&identity__email=gabriele.bov06%40gmail.com"
+  },
+  {
+    "name": "NEWBIE BADGE - LV8",
+    "issuer": "LV8",
+    "date": "Jul 2023",
+    "status": "Earned",
+    "type": "badge",
+    "description": "This badge represents the completion of the Newbie level in the LV8 platform, showcasing foundational skills and knowledge in various areas. It validates the ability to navigate and utilize the platform effectively.",
+    "credentialUrl": "https://badges.parchment.eu/public/assertions/BODHvvEsS12APmaeVVpZpw?utm_source=url_copy&identity__email=gabriele.bov06%40gmail.com"
   }
 ]
